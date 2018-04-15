@@ -1,0 +1,14 @@
+{
+  "lang": "en",
+  "title": "Template",
+  "stylesheets": ["./css/index.css"],
+  "scripts": ["./js/index.js"],
+  "charset": "utf-8",
+  "description": "",
+  "keywords": "",
+  "author": "frozenfung",
+  "favicon": "./images/favicon.png",
+  "viewport": "width=device-width, initial-scale=1",
+  "extra": []
+}
+
