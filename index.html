@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <title>Template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="This is a page">
+    <meta name="keywords" content="page, sample">
+    <meta name="author" content="frozenfung">
+    
+    <meta name="description" content="This is a page">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js"></script>
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+    <!-- CDNs -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.min.js"></script>
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.5/aframe/build/aframe-ar.js"></script>
+  </head>
+  <body>
+    <body style='margin : 0px; overflow: hidden;'>
+  <a-scene embedded arjs='sourceType: webcam;'>
+    <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>
+    <a-marker-camera preset='hiro'></a-marker-camera>
+  </a-scene>
+</body>
+
+  </body>
+</html>
