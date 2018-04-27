@@ -8,6 +8,10 @@ var pagesMetaPath = './pages_meta';
 var copyFolders = ['./images', './css', './js'];
 var outputPath = './build';
 
+// Decide environment
+var isProd = process.argv[2] === 'prod'
+// console.log(isProd);
+
 // First delete everything in the build directory.
 console.log('Cleaning previous build...');
 try {
@@ -57,7 +61,7 @@ try {
     var pageContent = page[1];
     fs.writeFileSync(
       path.join(outputPath,pageName+'.html'),
-      pageTemplate.generatePage(pageContent, metaData));
+      pageTemplate.generatePage(pageContent, metaData, isProd));
   }
 }
 catch (err){

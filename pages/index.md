@@ -1,7 +1,15 @@
-<body style='margin : 0px; overflow: hidden;'>
-  <a-scene embedded arjs='sourceType: webcam;'>
-    <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>
-    <a-marker-camera preset='hiro'></a-marker-camera>
-  </a-scene>
-</body>
+<div style="margin: 50px">
+  <h3>AR</h3>
+  <ul>
+    <li><a href="ar-0.html">frozenfung</a></li>
+    <li><a href="ar-1.html">聚樂邦</a></li>
+    <li><a href="ar-2.html">米格魯</a></li>
+  </ul>
 
+
+  <h3>Google</h3>
+  <ul>
+    <li><a href="vision-recognize.html">Vision Recognize API</a></li>
+    <li><a href="speech.html">Speech API</a></li>
+  </ul>
+</div>

@@ -3,7 +3,7 @@ var md = require('markdown-it')({
 });
 
 module.exports = {
-  generatePage: function(pageContent, pageMeta = defaultMeta){
+  generatePage: function(pageContent, pageMeta = defaultMeta, isProd){
     return`<!DOCTYPE html>
 <html lang="${pageMeta.lang || this.defaultMeta.lang}">
   <head>
@@ -38,12 +38,12 @@ module.exports = {
     }
     <link rel="icon" type="image/png" href="${pageMeta.favicon || this.defaultMeta.favicon}">
     <!-- CDNs -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.min.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.min.js"></script>
     <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.5/aframe/build/aframe-ar.js"></script>
   </head>
   <body>
+    ${isProd ? `<base href="https://frozenfung.li/ar-testing/" />` : ``
+     }
     ${md.render(pageContent)}
   </body>
 </html>

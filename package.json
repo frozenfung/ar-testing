@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build-pages": "node ./build_scripts/builder.js",
+    "build-pages-prod": "node ./build_scripts/builder.js prod",
     "start": "concurrently --kill-others \"nodemon -e js,json,css,md -i build -x \\\"npm run build-pages\\\"\" \"live-server ./build\"",
-    "deploy-gp": "git push origin src -f && git subtree split --prefix build -b master && git push -f origin master:master && git branch -D master",
+    "deploy-gp": "yarn build-pages-prod && git push origin src -f && git subtree split --prefix build -b master && git push -f origin master:master && git branch -D master",
     "deploy-s3": "s3-deploy './build/**' --cwd './build/' --region ap-northeast-1 --bucket ar-testing --profile s3"
   },
   "author": "frozenfung",
