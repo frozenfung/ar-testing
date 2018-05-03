@@ -1,4 +1,4 @@
-<a-scene embedded arjs='sourceType: webcam;'>
+<a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
   <!--城堡本體-->
   <a-box position="0 1 0"  color="#fff" width="1" height="1" depth="1.3"></a-box>
   <!--上面八個突起-->
@@ -18,5 +18,5 @@
   <!--圈圈-->
   <a-ring position="0 1 -0.1" color="#000" radius-outer="1.2" radius-inner="1.1" rotation="-90 0 0"></a-ring>
   <!--相機-->
-  <a-marker-camera preset='hiro'></a-marker-camera>
+  <a-marker-camera preset='custom' type='pattern' url='images/clubon-marker.patt'></a-marker-camera>
 </a-scene>
