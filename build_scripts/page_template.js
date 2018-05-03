@@ -36,6 +36,7 @@ module.exports = {
           :''
         :this.defaultMeta.scripts.map(value => `<script src="${value}"></script>`)
     }
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="${pageMeta.favicon || this.defaultMeta.favicon}">
     <!-- CDNs -->
     <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>

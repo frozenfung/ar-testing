@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0!Important;
+  height: 100vh!Important;
+}
+
+/*相機畫面*/
+#clubon-aframe {
+  display: inline-block;
+  margin: 10vh 1vw 0 1vw;
+  width: 66vw;
+  height: 50vw;
+}
+
+video {
+  display: inline-block;
+  top: 10vh!Important;
+  margin: 0 1vw 0 1vw!Important;
+  width: 66vw!Important;
+  height: auto!Important;
+}
+
+/*測試用marker*/
+#clubon-marker {
+  display: inline-block;
+  width: 31vw;
+  height: 50vw;
+  margin-top: 10vh;
+  text-align: center;
+  line-height: 50vw;
+  vertical-align: top;
+}
+
+#clubon-marker img {
+  width: 30vw;
+  vertical-align: middle;
+}
+
+
+
+/*手機版*/
+@media screen and (max-width: 1023px) {
+  body {
+    overflow: scroll;
+    width: 100vw!Important;
+  }
+
+  #clubon-aframe {
+    display: block;
+    margin: 10vh 0 0;
+    width: 100vw;
+    height: 133vw;
+  }
+
+  video {
+    display: block;
+    top: 0!Important;
+    margin: 10vh 0 0!Important;
+    width: 100vw!Important;
+    height: auto!Important;
+  }
+
+  #clubon-marker {
+    display: block;
+    width: 100vw;
+    height: auto;
+    margin: 50px 0;
+    padding-bottom: 70px;
+    text-align: center;
+  }
+
+  #clubon-marker img {
+    width: 90vw;
+    vertical-align: middle;
+  }
+}
