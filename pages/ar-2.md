@@ -3,9 +3,11 @@
     <a-asset-item id="beagle" src="images/beagle.obj"></a-asset-item>
     <a-asset-item id="color" src="images/beagle.mtl"></a-asset-item>
   </a-assets>
-  <a-obj-model src="#beagle" mtl="#color"></a-obj-model>
+  <a-marker preset='custom' type='pattern' url='images/clubon-marker.patt'>
+    <a-obj-model src="#beagle" mtl="#color"></a-obj-model>
   <!--marker-->
-  <a-marker-camera preset='custom' type='pattern' url='images/clubon-marker.patt'></a-marker-camera>
+  </a-marker>
+  <a-entity camera></a-entity>
 </a-scene>
 
 <div id="clubon-marker">
